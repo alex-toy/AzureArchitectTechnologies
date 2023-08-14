@@ -1,3 +1,9 @@
 # Microsoft Azure Architect Technologies
 
-<img src="/pictures/identity_server.png" title="identity server"  width="900">
+
+## Implement and Monitor an Azure Infrastructure
+
+### Storage accounts
+
+- create a storage account
+<img src="/pictures/sa.png" title="storage account"  width="900">
