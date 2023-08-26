@@ -5,5 +5,7 @@
 
 ### Storage accounts
 
-- create a storage account
-<img src="/pictures/sa.png" title="storage account"  width="900">
+- connection by access keys
+<img src="/pictures/access_keys.png" title="access keys"  width="900">
+<img src="/pictures/access_keys2.png" title="access keys"  width="900">
+<img src="/pictures/access_keys3.png" title="access keys"  width="900">
