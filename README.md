@@ -54,8 +54,21 @@ In case the key falls into the wrong hands, modify the access policy for the con
 <img src="/pictures/vm7.png" title="networking"  width="900">
 <img src="/pictures/vm8.png" title="networking"  width="900">
 
-- nox the site is reachable
-<img src="/pictures/vm9.png" title="install IIS"  width="900">
+- now the site is reachable
+<img src="/pictures/vm9.png" title="site reachable"  width="900">
+
+- add data disks
+<img src="/pictures/vm10.png" title="add data disks"  width="900">
+
+- initialize data disk
+<img src="/pictures/vm11.png" title="add data disks"  width="900">
+
+- create new volume
+<img src="/pictures/vm12.png" title="add data disks"  width="900">
+<img src="/pictures/vm13.png" title="add data disks"  width="900">
+
+- check that you have a new volume available
+<img src="/pictures/vm14.png" title="add data disks"  width="900">
 
 ### Linux Virtual Machines
 
@@ -74,3 +87,6 @@ sudo apt-get install nginx
 - add Inbound port Rule
 <img src="/pictures/linux_vm4.png" title="networking"  width="900">
 <img src="/pictures/linux_vm5.png" title="networking"  width="900">
+
+- now the site is reachable
+<img src="/pictures/linux_vm6.png" title="install IIS"  width="900">
