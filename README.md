@@ -138,3 +138,29 @@ Note : in order to be able to transfer traffic from one network interface to ano
 
 - create a second VM assigned to the same availability set and see that the Fault and Update domain have increased.
 <img src="/pictures/as4.png" title="availability set"  width="900">
+
+### Virtual Machine scale Sets
+
+- create a virtual machine scale set
+<img src="/pictures/ss.png" title="scale set"  width="500">
+<img src="/pictures/ss2.png" title="scale set"  width="500">
+<img src="/pictures/ss3.png" title="scale set"  width="500">
+<img src="/pictures/ss4.png" title="scale set"  width="900">
+
+- connect to the VM on the scale set
+<img src="/pictures/ss5.png" title="scale set"  width="900">
+
+- run commands
+```
+sudo apt-get update
+sudo apt-get install -y stress
+sudo stress --cpu 90
+```
+
+- after a couple of minutes, the scale set has reacted to the stress by increasing the number of virtual machines
+<img src="/pictures/ss6.png" title="scale set"  width="900">
+
+### Availability Zones
+
+- create a virtual machine and choose Availability Sets
+<img src="/pictures/az.png" title="availability zones"  width="500">
