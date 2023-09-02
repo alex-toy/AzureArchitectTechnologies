@@ -96,7 +96,8 @@ sudo apt-get install nginx
 - create a virtual machine and add a virtual network
 <img src="/pictures/vitual_network.png" title="virtual network"  width="900">
 
+- in order to create and attach a secondary network interface, the VM needs to be stopped.
+
 - attach a network interface
 <img src="/pictures/vitual_network2.png" title="virtual network"  width="900">
-
-- in order to create and attach a secondary network interface, the VM needs to be stopped.
+<img src="/pictures/vitual_network3.png" title="virtual network"  width="900">
