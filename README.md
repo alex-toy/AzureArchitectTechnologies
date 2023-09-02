@@ -44,7 +44,7 @@ In case the key falls into the wrong hands, modify the access policy for the con
 <img src="/pictures/vm3.png" title="connect to the virtual machine"  width="900">
 <img src="/pictures/vm4.png" title="connect to the virtual machine"  width="900">
 
-- install IIS
+- go to **Add Roles and Features** and install IIS
 <img src="/pictures/vm5.png" title="install IIS"  width="900">
 
 - try to connect from local machine : the site is unreachable
@@ -101,3 +101,29 @@ sudo apt-get install nginx
 - attach a network interface
 <img src="/pictures/vitual_network2.png" title="virtual network"  width="900">
 <img src="/pictures/vitual_network3.png" title="virtual network"  width="900">
+
+Note : in order to be able to transfer traffic from one network interface to another, you need to install software. The VM cannot do that natively.
+
+### Create a virtual machine image
+
+- inside the VM, go to : C:\Windows\System32\Sysprep
+
+- configure like the following
+<img src="/pictures/image.png" title="virtual machine image"  width="900">
+
+- stop the virtual machine
+
+- capture
+<img src="/pictures/image2.png" title="virtual machine image"  width="900">
+
+- go to images and create a VM based on that image
+<img src="/pictures/image3.png" title="virtual machine image"  width="500">
+<img src="/pictures/image31.png" title="virtual machine image"  width="500">
+
+- add inbound port rule for port 80
+
+- connect to the newly created VM. It already has IIS installed
+<img src="/pictures/image4.png" title="virtual machine image"  width="900">
+
+### Availability Sets
+
