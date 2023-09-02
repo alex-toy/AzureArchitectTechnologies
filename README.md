@@ -34,7 +34,7 @@ In case the key falls into the wrong hands, modify the access policy for the con
 <img src="/pictures/sap6.png" title="stored access policy"  width="900">
 <img src="/pictures/sap7.png" title="stored access policy"  width="900">
 
-### Virtual Machines
+### Windows Virtual Machines
 
 - create a virtual machine
 <img src="/pictures/vm.png" title="virtual machine"  width="900">
@@ -56,3 +56,21 @@ In case the key falls into the wrong hands, modify the access policy for the con
 
 - nox the site is reachable
 <img src="/pictures/vm9.png" title="install IIS"  width="900">
+
+### Linux Virtual Machines
+
+- create a virtual machine
+<img src="/pictures/linux_vm.png" title="linux virtual machine"  width="900">
+
+- connect to the virtual machine using putty
+<img src="/pictures/linux_vm2.png" title="linux virtual machine"  width="900">
+
+- run commands
+```
+sudo apt-get update
+sudo apt-get install nginx
+```
+
+- add Inbound port Rule
+<img src="/pictures/linux_vm4.png" title="networking"  width="900">
+<img src="/pictures/linux_vm5.png" title="networking"  width="900">
