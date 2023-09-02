@@ -135,3 +135,6 @@ Note : in order to be able to transfer traffic from one network interface to ano
 
 - the availability set now contains the VM which has a **Fault Domain** and **Update Domain** of 0
 <img src="/pictures/as3.png" title="availability set"  width="900">
+
+- create a second VM assigned to the same availability set and see that the Fault and Update domain have increased.
+<img src="/pictures/as4.png" title="availability set"  width="900">
