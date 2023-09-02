@@ -118,7 +118,7 @@ Note : in order to be able to transfer traffic from one network interface to ano
 
 - go to images and create a VM based on that image
 <img src="/pictures/image3.png" title="virtual machine image"  width="500">
-<img src="/pictures/image31.png" title="virtual machine image"  width="500">
+<img src="/pictures/image31.png" title="virtual machine image"  width="900">
 
 - add inbound port rule for port 80
 
@@ -127,3 +127,11 @@ Note : in order to be able to transfer traffic from one network interface to ano
 
 ### Availability Sets
 
+- create an availability set
+<img src="/pictures/as.png" title="availability set"  width="900">
+
+- create a VM based on that availability set
+<img src="/pictures/as2.png" title="availability set"  width="500">
+
+- the availability set now contains the VM which has a **Fault Domain** and **Update Domain** of 0
+<img src="/pictures/as3.png" title="availability set"  width="900">
