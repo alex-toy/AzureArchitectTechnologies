@@ -39,3 +39,20 @@ In case the key falls into the wrong hands, modify the access policy for the con
 - create a virtual machine
 <img src="/pictures/vm.png" title="virtual machine"  width="900">
 
+- connect to the virtual machine
+<img src="/pictures/vm2.png" title="connect to the virtual machine"  width="900">
+<img src="/pictures/vm3.png" title="connect to the virtual machine"  width="900">
+<img src="/pictures/vm4.png" title="connect to the virtual machine"  width="900">
+
+- install IIS
+<img src="/pictures/vm5.png" title="install IIS"  width="900">
+
+- try to connect from local machine : the site is unreachable
+<img src="/pictures/vm6.png" title="connection"  width="900">
+
+- add Inbound port Rule
+<img src="/pictures/vm7.png" title="networking"  width="900">
+<img src="/pictures/vm8.png" title="networking"  width="900">
+
+- nox the site is reachable
+<img src="/pictures/vm9.png" title="install IIS"  width="900">
