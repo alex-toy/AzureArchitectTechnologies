@@ -90,3 +90,13 @@ sudo apt-get install nginx
 
 - now the site is reachable
 <img src="/pictures/linux_vm6.png" title="install IIS"  width="900">
+
+### Network interface
+
+- create a virtual machine and add a virtual network
+<img src="/pictures/vitual_network.png" title="virtual network"  width="900">
+
+- attach a network interface
+<img src="/pictures/vitual_network2.png" title="virtual network"  width="900">
+
+- in order to create and attach a secondary network interface, the VM needs to be stopped.
