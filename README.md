@@ -162,5 +162,12 @@ sudo stress --cpu 90
 
 ### Availability Zones
 
-- create a virtual machine and choose Availability Sets
+- create a virtual machine scale set
 <img src="/pictures/az.png" title="availability zones"  width="500">
+<img src="/pictures/az2.png" title="availability zones"  width="500">
+
+- the three instances created are now each part of a different availability zone
+<img src="/pictures/az3.png" title="availability zones"  width="900">
+<img src="/pictures/az4.png" title="availability zones"  width="900">
+<img src="/pictures/az5.png" title="availability zones"  width="900">
+<img src="/pictures/az6.png" title="availability zones"  width="900">
