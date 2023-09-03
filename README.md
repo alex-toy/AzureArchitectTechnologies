@@ -225,3 +225,51 @@ sudo stress --cpu 90
 
 - add a network security rule
 <img src="/pictures/ps3.png" title="priority setting"  width="900">
+
+- associate it with a subnet
+<img src="/pictures/ps4.png" title="priority setting"  width="900">
+
+- because there is no allow rule for port 80 in the NSG, the site is unreachable
+<img src="/pictures/ps2.png" title="priority setting"  width="900">
+
+- add a network security rule for local ip
+<img src="/pictures/ps5.png" title="priority setting"  width="900">
+
+- check that the site is now reachable again
+
+#### Application Security Group
+
+- create a VM and put it on the *stagingnetwork* VN
+
+- on the VM *demovm*, install *SSMS* on it
+
+- on the VM *databasevm*, install *SQL Server* on it
+
+- on the VM *databasevm*, go to *Windows Defender Firewall with Advanced Security* and add a new rule
+<img src="/pictures/asg.png" title="priority setting"  width="900">
+<img src="/pictures/asg2.png" title="priority setting"  width="900">
+<img src="/pictures/asg3.png" title="priority setting"  width="900">
+<img src="/pictures/asg4.png" title="priority setting"  width="900">
+
+- on the VM *databasevm*, go to *SQL Server Configuration Manager* and mark the IP address as enabled
+<img src="/pictures/asg5.png" title="priority setting"  width="900">
+
+- restart
+<img src="/pictures/asg6.png" title="priority setting"  width="900">
+
+- add inbound rule for *databasevm*
+<img src="/pictures/asg7.png" title="priority setting"  width="900">
+
+- if you try to connect now to the database, you will get an error. We need an inbound rule
+<img src="/pictures/asg8.png" title="priority setting"  width="900">
+
+- add inbound rule for *databasevm*
+<img src="/pictures/asg9.png" title="priority setting"  width="900">
+
+
+
+
+
+
+- create an application security group
+<img src="/pictures/asg71.png" title="priority setting"  width="900">
