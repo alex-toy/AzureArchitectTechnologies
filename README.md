@@ -175,6 +175,8 @@ sudo stress --cpu 90
 
 ### Virtual Networks
 
+#### Create a VN a put a VM inside
+
 - create a virtual network
 <img src="/pictures/vn.png" title="virtual network"  width="900">
 
@@ -186,3 +188,20 @@ sudo stress --cpu 90
 
 - add a subnet
 <img src="/pictures/vn4.png" title="virtual network"  width="900">
+
+- add a virtual machine as part of the subnet
+<img src="/pictures/vn5.png" title="virtual network"  width="900">
+
+- the VM is now tied to the virtual network
+<img src="/pictures/vn6.png" title="virtual network"  width="900">
+
+#### IP Addressing
+
+- add a subnet
+<img src="/pictures/ip.png" title="IP addressing"  width="900">
+
+#### Network Security Groups
+
+- add a subnet
+<img src="/pictures/ip.png" title="IP addressing"  width="900">
+
