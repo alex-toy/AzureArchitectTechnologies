@@ -197,11 +197,31 @@ sudo stress --cpu 90
 
 #### IP Addressing
 
-- add a subnet
+- IP addressing
 <img src="/pictures/ip.png" title="IP addressing"  width="900">
 
 #### Network Security Groups
 
-- add a subnet
-<img src="/pictures/ip.png" title="IP addressing"  width="900">
+- create a VM and install IIS on it
 
+- add inbound rule to allow only my ip
+<img src="/pictures/nsg.png" title="network security groups"  width="900">
+
+- add inbound rule to allow traffic on port 80
+<img src="/pictures/nsg2.png" title="network security groups"  width="900">
+
+- connect to the web site
+<img src="/pictures/nsg3.png" title="network security groups"  width="900">
+
+#### Priority Setting
+
+- add a deny rule with higher priority
+<img src="/pictures/ps.png" title="priority setting"  width="900">
+
+- now the site is unreachable
+<img src="/pictures/ps2.png" title="priority setting"  width="900">
+
+- delete the deny rule
+
+- add a network security rule
+<img src="/pictures/ps3.png" title="priority setting"  width="900">
