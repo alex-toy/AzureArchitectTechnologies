@@ -34,7 +34,9 @@ In case the key falls into the wrong hands, modify the access policy for the con
 <img src="/pictures/sap6.png" title="stored access policy"  width="900">
 <img src="/pictures/sap7.png" title="stored access policy"  width="900">
 
-### Windows Virtual Machines
+### Virtual Machines
+
+#### Windows Virtual Machines
 
 - create a virtual machine
 <img src="/pictures/vm.png" title="virtual machine"  width="900">
@@ -70,7 +72,7 @@ In case the key falls into the wrong hands, modify the access policy for the con
 - check that you have a new volume available
 <img src="/pictures/vm14.png" title="add data disks"  width="900">
 
-### Linux Virtual Machines
+#### Linux Virtual Machines
 
 - create a virtual machine
 <img src="/pictures/linux_vm.png" title="linux virtual machine"  width="900">
@@ -91,7 +93,7 @@ sudo apt-get install nginx
 - now the site is reachable
 <img src="/pictures/linux_vm6.png" title="install IIS"  width="900">
 
-### Network interface
+#### Network interface
 
 - create a virtual machine and add a virtual network
 <img src="/pictures/vitual_network.png" title="virtual network"  width="900">
@@ -104,7 +106,7 @@ sudo apt-get install nginx
 
 Note : in order to be able to transfer traffic from one network interface to another, you need to install software. The VM cannot do that natively.
 
-### Create a virtual machine image
+#### Create a virtual machine image
 
 - inside the VM, go to : C:\Windows\System32\Sysprep
 
@@ -125,7 +127,7 @@ Note : in order to be able to transfer traffic from one network interface to ano
 - connect to the newly created VM. It already has IIS installed
 <img src="/pictures/image4.png" title="virtual machine image"  width="900">
 
-### Availability Sets
+#### Availability Sets
 
 - create an availability set
 <img src="/pictures/as.png" title="availability set"  width="900">
@@ -139,7 +141,7 @@ Note : in order to be able to transfer traffic from one network interface to ano
 - create a second VM assigned to the same availability set and see that the Fault and Update domain have increased.
 <img src="/pictures/as4.png" title="availability set"  width="900">
 
-### Virtual Machine scale Sets
+#### Virtual Machine scale Sets
 
 - create a virtual machine scale set
 <img src="/pictures/ss.png" title="scale set"  width="500">
@@ -148,7 +150,6 @@ Note : in order to be able to transfer traffic from one network interface to ano
 <img src="/pictures/ss4.png" title="scale set"  width="900">
 
 - connect to the VM on the scale set
-<img src="/pictures/ss5.png" title="scale set"  width="900">
 
 - run commands
 ```
@@ -160,7 +161,7 @@ sudo stress --cpu 90
 - after a couple of minutes, the scale set has reacted to the stress by increasing the number of virtual machines
 <img src="/pictures/ss6.png" title="scale set"  width="900">
 
-### Availability Zones
+#### Availability Zones
 
 - create a virtual machine scale set
 <img src="/pictures/az.png" title="availability zones"  width="500">
@@ -171,3 +172,17 @@ sudo stress --cpu 90
 <img src="/pictures/az4.png" title="availability zones"  width="900">
 <img src="/pictures/az5.png" title="availability zones"  width="900">
 <img src="/pictures/az6.png" title="availability zones"  width="900">
+
+### Virtual Networks
+
+- create a virtual network
+<img src="/pictures/vn.png" title="virtual network"  width="900">
+
+- add a subnet
+<img src="/pictures/vn2.png" title="virtual network"  width="900">
+
+- change and add address spaces
+<img src="/pictures/vn3.png" title="virtual network"  width="900">
+
+- add a subnet
+<img src="/pictures/vn4.png" title="virtual network"  width="900">
