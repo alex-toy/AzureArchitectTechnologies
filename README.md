@@ -179,12 +179,15 @@ sudo stress --cpu 90
 #### Create a VN a put a VM inside
 
 - create a virtual network
+<img src="/pictures/vn0.png" title="virtual network"  width="500">
 <img src="/pictures/vn.png" title="virtual network"  width="900">
 
 - add a subnet
 <img src="/pictures/vn2.png" title="virtual network"  width="900">
+<img src="/pictures/vn21.png" title="virtual network"  width="900">
 
 - change and add address spaces
+<img src="/pictures/vn30.png" title="virtual network"  width="900">
 <img src="/pictures/vn3.png" title="virtual network"  width="900">
 
 - add a subnet
