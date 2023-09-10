@@ -102,6 +102,7 @@ sudo apt-get install nginx
 
 - attach a network interface
 <img src="/pictures/vitual_network2.png" title="virtual network"  width="900">
+<img src="/pictures/vitual_network21.png" title="virtual network"  width="500">
 <img src="/pictures/vitual_network3.png" title="virtual network"  width="900">
 
 Note : in order to be able to transfer traffic from one network interface to another, you need to install software. The VM cannot do that natively.
