@@ -354,3 +354,30 @@ sudo stress --cpu 90
 
 - see that you can connect from the VM through Azure storage explorer thanks to the private endpoint
 <img src="/pictures/pe5.png" title="private endpoints"  width="900">
+
+#### User Defined Routes
+
+- create three VN with 3 VM in each of them
+<img src="/pictures/usr01.png" title="user defined routes"  width="900">
+<img src="/pictures/usr02.png" title="user defined routes"  width="900">
+
+- install IIS on vmA
+<img src="/pictures/udr.png" title="user defined routes"  width="900">
+
+- using private IP of vmA, try to reach IIS from vmB
+<img src="/pictures/udr1.png" title="user defined routes"  width="900">
+
+- create a route table and add routes. Since we want all our traffic to be redirected to vmC, use its private IP. Now any traffic within the VN will be redirected to vmC
+<img src="/pictures/udr2.png" title="user defined routes"  width="900">
+
+- associate the routes with subnetB
+<img src="/pictures/udr3.png" title="user defined routes"  width="900">
+
+- check that you can't reach vmA from vmB anymore. This is because our traffic is being routed to vmC and vmC doesn't know how to route traffic to vmA.
+<img src="/pictures/udr4.png" title="user defined routes"  width="900">
+
+- on vmC, move to the network interface, then enable IP fowarding
+<img src="/pictures/udr5.png" title="user defined routes"  width="900">
+
+- on vmC, install the routing rules (Add roles and features / Remote Access / Routing )
+<img src="/pictures/udr6.png" title="user defined routes"  width="900">
