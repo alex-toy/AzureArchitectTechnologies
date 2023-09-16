@@ -303,6 +303,22 @@ sudo stress --cpu 90
 <img src="/pictures/js4.png" title="jump server"  width="500">
 
 - in *demovm*, add a firewall allowing the private IP of *jumpserver*
-<img src="/pictures/js5.png" title="jump server"  width="500">
+<img src="/pictures/js5.png" title="jump server"  width="900">
 
 - you can now connect to *demovm* from *jumpserver* using RDP
+<img src="/pictures/js6.png" title="jump server"  width="900">
+
+#### Azure Bastion Host
+
+- create a VM *demovm* in VN *new-network* *SubnetA*. Choose *None* for public IP
+<img src="/pictures/abh.png" title="azure bastion host"  width="900">
+<img src="/pictures/abh1.png" title="azure bastion host"  width="900">
+
+- connect through *Bastion*
+<img src="/pictures/abh2.png" title="azure bastion host"  width="900">
+<img src="/pictures/abh3.png" title="azure bastion host"  width="900">
+
+#### Service Endpoints
+
+- create a storage account *newstore*
+<img src="/pictures/abh.png" title="service endpoints"  width="900">
