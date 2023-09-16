@@ -285,10 +285,24 @@ sudo stress --cpu 90
 - add inbound rule for *databasevm*
 <img src="/pictures/asg9.png" title="application security group"  width="900">
 
-
-
-
-
-
 - create an application security group
 <img src="/pictures/asg71.png" title="priority setting"  width="900">
+
+#### Jump Server
+
+- create a virtual network *staging-network* with a subnet *SubnetA*
+<img src="/pictures/js.png" title="jump server"  width="900">
+
+- create a VM *demovm* in *SubnetA*. Choose *None* for public IP
+<img src="/pictures/js2.png" title="jump server"  width="500">
+
+- create a subnet *jumpSubnet* in *staging-network*
+<img src="/pictures/js3.png" title="jump server"  width="900">
+
+- create a VM *jumpserver* in *jumpSubnet*. In this case you need an IP address.
+<img src="/pictures/js4.png" title="jump server"  width="500">
+
+- in *demovm*, add a firewall allowing the private IP of *jumpserver*
+<img src="/pictures/js5.png" title="jump server"  width="500">
+
+- you can now connect to *demovm* from *jumpserver* using RDP
