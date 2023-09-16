@@ -381,3 +381,18 @@ sudo stress --cpu 90
 
 - on vmC, install the routing rules (Add roles and features / Remote Access / Routing )
 <img src="/pictures/udr6.png" title="user defined routes"  width="900">
+Choose deploy VPN only
+<img src="/pictures/udr7.png" title="user defined routes"  width="900">
+<img src="/pictures/udr8.png" title="user defined routes"  width="900">
+<img src="/pictures/udr9.png" title="user defined routes"  width="900">
+<img src="/pictures/udr10.png" title="user defined routes"  width="900">
+<img src="/pictures/udr11.png" title="user defined routes"  width="900">
+Now it understands how to route the requests
+<img src="/pictures/udr12.png" title="user defined routes"  width="900">
+
+- you should now be able to reach IIS on vmA from vmB 
+
+#### Virtual network peering
+
+- create three VN with 3 VM in each of them
+<img src="/pictures/vnp.png" title="virtual network peering"  width="900">
