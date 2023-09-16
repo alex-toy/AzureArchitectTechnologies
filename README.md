@@ -333,6 +333,24 @@ sudo stress --cpu 90
 
 - in the *Service Endpoints* section for the VN hosting the VM, add a service endpoint
 <img src="/pictures/se3.png" title="service endpoints"  width="900">
+<img src="/pictures/se31.png" title="service endpoints"  width="900">
 
 - add that network / subnet to the storage account
 <img src="/pictures/se4.png" title="service endpoints"  width="900">
+
+- see that you can connect from the VM through Azure storage explorer
+
+#### Private Endpoints
+
+- create a storage account *newstorealexei* with a container *data* and remove access
+<img src="/pictures/pe0.png" title="private endpoints"  width="900">
+<img src="/pictures/pe01.png" title="private endpoints"  width="900">
+
+- in the *Networking* section, create a private endpoint
+<img src="/pictures/pe.png" title="private endpoints"  width="900">
+<img src="/pictures/pe2.png" title="private endpoints"  width="900">
+<img src="/pictures/pe3.png" title="private endpoints"  width="900">
+<img src="/pictures/pe4.png" title="private endpoints"  width="900">
+
+- see that you can connect from the VM through Azure storage explorer thanks to the private endpoint
+<img src="/pictures/pe5.png" title="private endpoints"  width="900">
