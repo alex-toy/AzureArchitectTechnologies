@@ -320,5 +320,19 @@ sudo stress --cpu 90
 
 #### Service Endpoints
 
-- create a storage account *newstore*
-<img src="/pictures/abh.png" title="service endpoints"  width="900">
+- create a storage account *newstorealexei* with a container *data*
+
+- in the *Networking* section, disable *public network access*
+<img src="/pictures/se.png" title="service endpoints"  width="900">
+
+- in the *Access keys* section, grab key 1 and connect through *Azure Data Explorer*
+<img src="/pictures/se1.png" title="service endpoints"  width="900">
+
+- see that access is refused
+<img src="/pictures/se2.png" title="service endpoints"  width="900">
+
+- in the *Service Endpoints* section for the VN hosting the VM, add a service endpoint
+<img src="/pictures/se3.png" title="service endpoints"  width="900">
+
+- add that network / subnet to the storage account
+<img src="/pictures/se4.png" title="service endpoints"  width="900">
