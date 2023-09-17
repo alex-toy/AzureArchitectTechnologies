@@ -409,3 +409,11 @@ Now it understands how to route the requests
 Check that your networks are no connected
 <img src="/pictures/vnp3.png" title="virtual network peering"  width="900">
 <img src="/pictures/vnp4.png" title="virtual network peering"  width="900">
+
+- now you should be able to connect to IIS from *testvm* using *stagingvm* private IP
+<img src="/pictures/vnp5.png" title="virtual network peering"  width="900"> 
+
+#### Point to site VPN connection
+
+- create a VM *stagingvm* inside a VN *stagingnetwork/subnetA*
+<img src="/pictures/ptsvpnc.png" title="virtual network peering"  width="900">
