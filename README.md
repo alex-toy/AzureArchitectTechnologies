@@ -394,5 +394,18 @@ Now it understands how to route the requests
 
 #### Virtual network peering
 
-- create three VN with 3 VM in each of them
+- create a VM *stagingvm* inside a VN *stagingnetwork/subnetA*
 <img src="/pictures/vnp.png" title="virtual network peering"  width="900">
+
+- create a VM *testvm* inside a VN *testnetwork/subnetA*
+<img src="/pictures/vnp1.png" title="virtual network peering"  width="900">
+
+- install IIS on *stagingvm*
+
+- on *testvm*, turn off enhanced security configuration
+
+- add peering network
+<img src="/pictures/vnp2.png" title="virtual network peering"  width="500">
+Check that your networks are no connected
+<img src="/pictures/vnp3.png" title="virtual network peering"  width="900">
+<img src="/pictures/vnp4.png" title="virtual network peering"  width="900">
