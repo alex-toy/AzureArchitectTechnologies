@@ -257,6 +257,7 @@ sudo stress --cpu 90
 <img src="/pictures/asg04.png" title="priority setting"  width="900">
 
 - the site is again unreachable, we need to set an allow rule for port 80 on the NSG
+<img src="/pictures/asg05.png" title="priority setting"  width="900">
 
 #### Application Security Group
 
