@@ -286,8 +286,19 @@ sudo stress --cpu 90
 - add inbound rule for *databasevm*
 <img src="/pictures/asg9.png" title="application security group"  width="900">
 
-- create an application security group
+- now you can connect to the database
+<img src="/pictures/asg91.png" title="application security group"  width="900">
+
+- create an application security group (ASG)
 <img src="/pictures/asg71.png" title="priority setting"  width="900">
+
+- in *demovm*, configure the ASG
+<img src="/pictures/asg72.png" title="priority setting"  width="900">
+
+- in *databasevm*, modify the Port1433 rule with the ASG
+<img src="/pictures/asg73.png" title="priority setting"  width="900">
+
+- the connection should work just as previously
 
 #### Jump Server
 
