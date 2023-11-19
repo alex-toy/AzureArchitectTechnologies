@@ -446,3 +446,15 @@ Check that your networks are no connected
 
 - add a database to the sql pool
 <img src="/pictures/elastic_pool1.png" title="elastic pool"  width="900">
+<img src="/pictures/elastic_pool2.png" title="elastic pool"  width="900">
+
+### Active geo-replication
+
+- create a replica. For this you need to create antoher server
+<img src="/pictures/replica.png" title="replica"  width="900">
+
+- execute script.sql on *demodb*
+<img src="/pictures/replica1.png" title="replica"  width="900">
+
+- see the replication on 
+<img src="/pictures/replica2.png" title="replica"  width="900">
