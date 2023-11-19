@@ -441,5 +441,8 @@ Check that your networks are no connected
 
 ### Azure SQL Elastic Pool
 
-- create a SQL Database
-<img src="/pictures/sql_service.png" title="sql service"  width="900">
+- go the the sql pool server
+<img src="/pictures/elastic_pool.png" title="elastic pool"  width="900">
+
+- add a database to the sql pool
+<img src="/pictures/elastic_pool1.png" title="elastic pool"  width="900">
