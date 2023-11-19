@@ -408,13 +408,18 @@ Now it understands how to route the requests
 
 - create a VM *stagingvm* inside a VN *stagingnetwork/subnetA*
 <img src="/pictures/vnp.png" title="virtual network peering"  width="900">
+<img src="/pictures/vnp0.png" title="virtual network peering"  width="900">
 
 - create a VM *testvm* inside a VN *testnetwork/subnetA*
 <img src="/pictures/vnp1.png" title="virtual network peering"  width="900">
+<img src="/pictures/vnp10.png" title="virtual network peering"  width="900">
 
 - install IIS on *stagingvm*
 
 - on *testvm*, turn off enhanced security configuration
+
+For the moment, it is not possible to connect to IIS on *stagingvm*, because we have no firewall rule. It's not even possible to connect to *stagingvm* from *testvm* using the private address.
+<img src="/pictures/vnp11.png" title="virtual network peering"  width="900">
 
 - add peering network
 <img src="/pictures/vnp2.png" title="virtual network peering"  width="500">
@@ -456,5 +461,5 @@ Check that your networks are no connected
 - execute script.sql on *demodb*
 <img src="/pictures/replica1.png" title="replica"  width="900">
 
-- see the replication on 
+- see the replication on the us server
 <img src="/pictures/replica2.png" title="replica"  width="900">
