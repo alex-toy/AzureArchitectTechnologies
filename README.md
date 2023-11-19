@@ -429,3 +429,17 @@ Check that your networks are no connected
 
 - create a VM *stagingvm* inside a VN *stagingnetwork/subnetA*
 <img src="/pictures/ptsvpnc.png" title="virtual network peering"  width="900">
+
+
+## Implement and Manage Data Platform
+
+### Azure SQL Service
+
+- create a SQL Database
+<img src="/pictures/sql_service.png" title="sql service"  width="900">
+<img src="/pictures/sql_service1.png" title="sql service"  width="900">
+
+### Azure SQL Elastic Pool
+
+- create a SQL Database
+<img src="/pictures/sql_service.png" title="sql service"  width="900">
