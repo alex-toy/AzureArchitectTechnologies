@@ -34,6 +34,17 @@ In case the key falls into the wrong hands, modify the access policy for the con
 <img src="/pictures/sap6.png" title="stored access policy"  width="900">
 <img src="/pictures/sap7.png" title="stored access policy"  width="900">
 
+### Redundancy
+
+- create a storage account with *Geo-redundancy*
+<img src="/pictures/redundant.png" title="redundant storage"  width="900">
+
+- note that you have : *Primary: France Central, Secondary: France South*
+<img src="/pictures/redundant1.png" title="redundant storage"  width="900">
+
+- you can now access data from the secondary location
+<img src="/pictures/redundant2.png" title="redundant storage"  width="900">
+
 ### Virtual Machines
 
 #### Windows Virtual Machines
@@ -422,7 +433,7 @@ For the moment, it is not possible to connect to IIS on *stagingvm*, because we 
 <img src="/pictures/vnp11.png" title="virtual network peering"  width="900">
 
 - add peering network
-<img src="/pictures/vnp2.png" title="virtual network peering"  width="500">
+<img src="/pictures/vnp2.png" title="virtual network peering"  width="900">
 Check that your networks are no connected
 <img src="/pictures/vnp3.png" title="virtual network peering"  width="900">
 <img src="/pictures/vnp4.png" title="virtual network peering"  width="900">
@@ -431,6 +442,8 @@ Check that your networks are no connected
 <img src="/pictures/vnp5.png" title="virtual network peering"  width="900"> 
 
 #### Point to site VPN connection
+
+Suppose you want to establish a secure connection from your machine to a machine inside a VN using its private IP, you need to use a point to site VPN connection.
 
 - create a VM *stagingvm* inside a VN *stagingnetwork/subnetA*
 <img src="/pictures/ptsvpnc.png" title="virtual network peering"  width="900">
