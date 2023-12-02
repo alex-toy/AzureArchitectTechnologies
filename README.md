@@ -5,6 +5,8 @@
 
 ### Storage accounts
 
+#### Connection
+
 - connection by access keys
 <img src="/pictures/access_keys.png" title="access keys"  width="900">
 <img src="/pictures/access_keys2.png" title="access keys"  width="900">
@@ -34,7 +36,7 @@ In case the key falls into the wrong hands, modify the access policy for the con
 <img src="/pictures/sap6.png" title="stored access policy"  width="900">
 <img src="/pictures/sap7.png" title="stored access policy"  width="900">
 
-### Redundancy
+#### Redundancy
 
 - create a storage account with *Geo-redundancy*
 <img src="/pictures/redundant.png" title="redundant storage"  width="900">
@@ -44,6 +46,20 @@ In case the key falls into the wrong hands, modify the access policy for the con
 
 - you can now access data from the secondary location
 <img src="/pictures/redundant2.png" title="redundant storage"  width="900">
+
+#### Access Tier
+
+- on the storage account *Configuration* section, choose *Cool Access Tier*
+<img src="/pictures/tier.png" title="access tier"  width="900">
+
+- now, the file on the container has changed access tier
+<img src="/pictures/tier1.png" title="access tier"  width="900">
+
+- it is possible to change tier
+<img src="/pictures/tier2.png" title="access tier"  width="900">
+
+- after moving the access tier to *Archive*, you need to rehydrate it before access it again
+<img src="/pictures/tier3.png" title="access tier"  width="900">
 
 ### Virtual Machines
 
