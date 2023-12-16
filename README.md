@@ -471,6 +471,16 @@ Suppose you want to establish a secure connection from your machine to a machine
 - create a storage account. Create a container *data*. Upload file *InstallIIS.ps1*. Launch the creation.
 <img src="/pictures/ptsvpnc3.png" title="point to site vpn connection"  width="900">
 
+- inside *stagingvm*, create a *Gateway Subnet*. Leave defaults
+<img src="/pictures/ptsvpnc4.png" title="point to site vpn connection"  width="900">
+
+- create a *Virtual Network Gateway*. 
+<img src="/pictures/ptsvpnc5.png" title="point to site vpn connection"  width="900">
+<img src="/pictures/ptsvpnc51.png" title="point to site vpn connection"  width="900">
+
+- create a VM in a different location.
+<img src="/pictures/ptsvpnc4.png" title="point to site vpn connection"  width="900">
+
 
 ## Implement and Manage Data Platform
 
