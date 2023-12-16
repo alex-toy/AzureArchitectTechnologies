@@ -464,6 +464,9 @@ Suppose you want to establish a secure connection from your machine to a machine
 - create a VM *stagingvm* inside a VN *azure-network/subnetA*. Make sure the IP is *None*.
 <img src="/pictures/ptsvpnc.png" title="point to site vpn connection"  width="900">
 
+- note *stagingvm* doesn't have a public IP
+<img src="/pictures/ptsvpnc0.png" title="point to site vpn connection"  width="900">
+
 - create extension. Choose *custom script extension*
 <img src="/pictures/ptsvpnc1.png" title="point to site vpn connection"  width="900">
 <img src="/pictures/ptsvpnc2.png" title="point to site vpn connection"  width="900">
@@ -495,6 +498,21 @@ Suppose you want to establish a secure connection from your machine to a machine
 <img src="/pictures/ptsvpnc721.png" title="point to site vpn connection"  width="900">
 <img src="/pictures/ptsvpnc722.png" title="point to site vpn connection"  width="900">
 <img src="/pictures/ptsvpnc723.png" title="point to site vpn connection"  width="900">
+
+- on *clientvm*, run *VpnClientSetupAmd64* as an administrator
+<img src="/pictures/ptsvpnc8.png" title="point to site vpn connection"  width="900">
+
+- on *clientvm*, in *VPN Settings*, connect to the *azure-network*
+<img src="/pictures/ptsvpnc81.png" title="point to site vpn connection"  width="900">
+
+- on *clientvm*, connect to IIS using the private IP of *stagingvm*
+<img src="/pictures/ptsvpnc82.png" title="point to site vpn connection"  width="900">
+
+- create a VM *clientvm1*. Use same VN as *stagingvm*
+<img src="/pictures/ptsvpnc01.png" title="point to site vpn connection"  width="900">
+
+- on *clientvm*, export the client certificate. Choose export the private key and leave defaults
+<img src="/pictures/ptsvpnc02.png" title="point to site vpn connection"  width="900">
 
 
 ## Implement and Manage Data Platform
