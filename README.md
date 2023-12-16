@@ -474,12 +474,24 @@ Suppose you want to establish a secure connection from your machine to a machine
 - inside *stagingvm*, create a *Gateway Subnet*. Leave defaults
 <img src="/pictures/ptsvpnc4.png" title="point to site vpn connection"  width="900">
 
-- create a *Virtual Network Gateway*. 
+- create a *Virtual Network Gateway* called *appgateway*. 
 <img src="/pictures/ptsvpnc5.png" title="point to site vpn connection"  width="900">
 <img src="/pictures/ptsvpnc51.png" title="point to site vpn connection"  width="900">
 
-- create a VM in a different location.
-<img src="/pictures/ptsvpnc4.png" title="point to site vpn connection"  width="900">
+- add a *Point to Site Configuration* to *appgateway*
+<img src="/pictures/ptsvpnc6.png" title="point to site vpn connection"  width="900">
+
+- create *clientvm* a VM in a different location.
+
+- on *clientvm*, run *selfSignedCertificate.ps1*
+<img src="/pictures/ptsvpnc7.png" title="point to site vpn connection"  width="900">
+<img src="/pictures/ptsvpnc71.png" title="point to site vpn connection"  width="900">
+
+- on *clientvm*, export root certificate
+<img src="/pictures/ptsvpnc72.png" title="point to site vpn connection"  width="900">
+<img src="/pictures/ptsvpnc721.png" title="point to site vpn connection"  width="900">
+<img src="/pictures/ptsvpnc722.png" title="point to site vpn connection"  width="900">
+<img src="/pictures/ptsvpnc723.png" title="point to site vpn connection"  width="900">
 
 
 ## Implement and Manage Data Platform
