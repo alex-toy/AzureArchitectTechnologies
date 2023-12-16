@@ -461,8 +461,15 @@ Check that your networks are no connected
 
 Suppose you want to establish a secure connection from your machine to a machine inside a VN using its private IP, you need to use a point to site VPN connection.
 
-- create a VM *stagingvm* inside a VN *stagingnetwork/subnetA*
-<img src="/pictures/ptsvpnc.png" title="virtual network peering"  width="900">
+- create a VM *stagingvm* inside a VN *azure-network/subnetA*. Make sure the IP is *None*.
+<img src="/pictures/ptsvpnc.png" title="point to site vpn connection"  width="900">
+
+- create extension. Choose *custom script extension*
+<img src="/pictures/ptsvpnc1.png" title="point to site vpn connection"  width="900">
+<img src="/pictures/ptsvpnc2.png" title="point to site vpn connection"  width="900">
+
+- create a storage account. Create a container *data*. Upload file *InstallIIS.ps1*. Launch the creation.
+<img src="/pictures/ptsvpnc3.png" title="point to site vpn connection"  width="900">
 
 
 ## Implement and Manage Data Platform
