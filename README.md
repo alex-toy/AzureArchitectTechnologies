@@ -481,6 +481,9 @@ Suppose you want to establish a secure connection from your machine to a machine
 - add a *Point to Site Configuration* to *appgateway*
 <img src="/pictures/ptsvpnc6.png" title="point to site vpn connection"  width="900">
 
+- download VPN client
+<img src="/pictures/ptsvpnc61.png" title="point to site vpn connection"  width="900">
+
 - create *clientvm* a VM in a different location.
 
 - on *clientvm*, run *selfSignedCertificate.ps1*
