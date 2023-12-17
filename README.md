@@ -514,6 +514,41 @@ Suppose you want to establish a secure connection from your machine to a machine
 - on *clientvm*, export the client certificate. Choose export the private key and leave defaults
 <img src="/pictures/ptsvpnc02.png" title="point to site vpn connection"  width="900">
 
+#### Site to site VPN connection
+
+Suppose you want to establish a secure connection from your machine to a machine inside a VN using its private IP, you need to use a point to site VPN connection.
+
+- create a VM *demovm* inside a VN *azure-network/subnetA*. Make sure the IP is *None*.
+<img src="/pictures/stsvpnc.png" title="site to site vpn connection"  width="900">
+
+- inside *demovm*, create a *Gateway Subnet*. Leave defaults
+<img src="/pictures/stsvpnc1.png" title="site to site vpn connection"  width="900">
+
+- create a *Virtual Network Gateway*
+<img src="/pictures/stsvpnc2.png" title="site to site vpn connection"  width="900">
+
+- create a VM *companyvm* inside a VN *company-network/subnetA*. Choose a different location than *demovm*
+<img src="/pictures/stsvpnc3.png" title="site to site vpn connection"  width="900">
+<img src="/pictures/stsvpnc31.png" title="site to site vpn connection"  width="900">
+
+- on *companyvm*, install *Remote access*. Choose *Routing* and *DirectAccess and VPN*
+<img src="/pictures/stsvpnc4.png" title="site to site vpn connection"  width="900">
+<img src="/pictures/stsvpnc41.png" title="site to site vpn connection"  width="900">
+
+- on *companyvm*, install *getting started wizard*. Choose *Deploy VPN only*. Then *Custom Configuration*
+<img src="/pictures/stsvpnc5.png" title="site to site vpn connection"  width="900">
+<img src="/pictures/stsvpnc51.png" title="site to site vpn connection"  width="900">
+<img src="/pictures/stsvpnc52.png" title="site to site vpn connection"  width="900">
+<img src="/pictures/stsvpnc53.png" title="site to site vpn connection"  width="900">
+<img src="/pictures/stsvpnc54.png" title="site to site vpn connection"  width="900">
+
+-create a *local network gateway*. Use the IP of *companyvm* as well as the address space of *company-network*. Choose same location as the *sitegateway*.
+<img src="/pictures/stsvpnc6.png" title="site to site vpn connection"  width="900">
+
+- on *sitegateway*, add a connection
+<img src="/pictures/stsvpnc61.png" title="site to site vpn connection"  width="900">
+<img src="/pictures/stsvpnc62.png" title="site to site vpn connection"  width="900">
+
 
 ## Implement and Manage Data Platform
 
